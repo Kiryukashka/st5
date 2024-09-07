@@ -1,0 +1,33 @@
+body {
+    background: linear-gradient(90deg, #160048 0%, #000000 94%);
+}
+
+.nav-link {
+    color: white;
+}
+
+.navbar-nav .nav-link.active {
+    color: rgb(118, 114, 114);
+}
+
+.navbar-brand img {
+    width: 40px;
+}
+
+.navbar-toggler {
+    background-color: rgb(118, 114, 114);
+}
+
+.sidebar {
+    color: white;
+}
+
+.card {
+    background: linear-gradient(270deg, #160048 0%, #000000 94%);
+    color: white;
+}
+
+.card a {
+    text-decoration: none;
+    color: white    ;
+}
