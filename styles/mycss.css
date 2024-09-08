@@ -20,6 +20,7 @@ body {
 
 .sidebar {
     color: white;
+    background: linear-gradient(270deg, #160048 0%, #000000 94%);
 }
 
 .card {
@@ -30,4 +31,28 @@ body {
 .card a {
     text-decoration: none;
     color: white    ;
+}
+
+.slide-text,
+.footer-text
+ {
+    color: white;
+    margin: auto auto;
+}
+
+footer {
+    background: linear-gradient(270deg, #160048 0%, #000000 94%);
+
+}
+
+.media-links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media (max-width: 755px) {
+   .carousel-indicators {
+    display: none;
+   } 
 }
