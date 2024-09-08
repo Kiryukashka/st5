@@ -44,6 +44,11 @@ p {
     margin: auto auto;
 }
 
+footer a {
+    text-decoration: none;
+    color: white;
+}
+
 footer,
 .btn-outline-primary
  {
