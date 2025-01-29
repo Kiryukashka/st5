@@ -1,12 +1,27 @@
 body {
     background: linear-gradient(90deg, #160048 0%, #000000 94%);
-}
-
-p {
     color: white;
 }
 
-/*навігаційна панель*/
+html, body {
+    height: 100%;
+}
+
+#osnova {
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+section {
+    flex: 1 1 auto;
+}
+
+a {
+    text-decoration: none;
+}
+
+/*Навігаційна панель*/
 
 .nav-link {
     color: white;
@@ -24,14 +39,21 @@ p {
     background-color: rgb(118, 114, 114);
 }
 
-/*бкоковий текст*/
+/*Бококовий текст*/
 
 .sidebar {
     color: white;
     background: linear-gradient(270deg, #160048 0%, #000000 94%);
 }
 
-/*товар*/
+/*Пошукова система*/
+
+#poshuk {
+    margin-left: 37%;
+    width: 17%;
+}
+
+/*Товар*/
 
 .card {
     background: linear-gradient(270deg, #160048 0%, #000000 94%);
@@ -43,7 +65,52 @@ p {
     color: white    ;
 }
 
-/*фоточкі на головній сторінці і те що під ними*/
+/*Відгуки*/
+
+.koment {
+    margin-left: 25%;
+    width: 50%;
+}
+
+.btn-outline-info {
+    width: 100%;
+    margin-top: 1%;
+    margin-bottom: 1%;
+} 
+
+/*Калькулятор*/
+
+.kalkulator {
+    margin-top: 3%;
+    margin-left: 35%;
+    width: 25%;
+}
+
+.kalkulator .btn-outline-info {
+    width: 100%;
+}
+
+#result {
+    color: black;
+}
+
+.resultat {
+    text-align: center;
+    color: black;
+    background-color: white;
+    border-radius: 7px;
+    margin-top: 5px;
+}
+
+.plusminus {
+    text-align: center;
+}
+
+/*Силкі*/
+
+footer {
+    background: linear-gradient(270deg, #160048 0%, #000000 94%);
+}
 
 .slide-text,
 .footer-text
@@ -53,17 +120,20 @@ p {
 }
 
 footer a {
-    text-decoration: none;
     color: white;
 }
 
 footer,
 .btn-outline-primary
  {
-    background: linear-gradient(270deg, #160048 0%, #000000 94%);
+color: white;
 }
 
-/*соц. сєті*/
+footer a:hover {
+    color: #474747;
+}
+
+/*Соц. сєті*/
 
 .media-links {
     display: flex;
@@ -71,7 +141,7 @@ footer,
     align-items: center;
 }
 
-/*вайбер*/
+/*Вайбер*/
 
 .call-anim {
     animation: call 2s ease 0s infinite normal forwards;
@@ -103,16 +173,4 @@ footer,
 	75% {
 		transform: translateX(-6px) rotate(-1.2deg);
 	}
-}
-
-/*щоб все було гарно на телефоні*/
-
-@media (max-width: 755px) {
-   .carousel-indicators {
-    display: none;
-   } 
-}
-
-footer a:hover {
-    color: #2b2b2b;
 }
