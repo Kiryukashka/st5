@@ -116,7 +116,7 @@ section {
 /*Основна інформація*/
 
 .info_osnova {
-    margin-left: 10%;
+    margin-left: 20%;
     margin-top: 4%;
 }
 
@@ -210,8 +210,5 @@ footer a:hover {
     }
     .next_old {
         margin-left: -15%;
-    }
-    .info_osnova {
-        margin-left: -10%;
     }
 }
