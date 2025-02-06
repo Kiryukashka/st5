@@ -146,6 +146,12 @@ footer a:hover {
     animation: call 2s ease 0s infinite normal forwards;
 }
 
+@media (min-width: 1920px) {
+    #buycar {
+        margin-top: 7%;
+    }
+}
+
 @keyframes call {
 
     0%,

@@ -62,7 +62,7 @@ function render() {
 render()
 
 createBtn.onclick = function () {
-    if (inputElement.value.length === 0) {
+    if (inputElement.value.length === 0 || inputElement.value.length.trim) {
         return;
     }
     const newNote = {

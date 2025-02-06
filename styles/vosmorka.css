@@ -116,7 +116,7 @@ section {
 /*Основна інформація*/
 
 .info_osnova {
-    margin-left: 20%;
+    margin-left: 10%;
     margin-top: 4%;
 }
 
@@ -195,11 +195,6 @@ footer a:hover {
     align-items: center;
 }
 
-@media (max-width: 1024px) {
-    .rekomend {
-        margin-left: -10%;
-    }
-}
 
 @media (max-width: 425px) {
     .container {
@@ -210,5 +205,23 @@ footer a:hover {
     }
     .next_old {
         margin-left: -15%;
+    }
+    .info_osnova {
+        margin-right: -7%;
+    }
+    .foto_vasmoi {
+        margin-left: -13%;
+    }
+}
+
+@media (max-width: 768px) {
+    .foto_vasmoi {
+        margin-right: -12%;
+    }
+}
+
+@media (max-width: 375px) {
+    .info_mini  {
+        margin-left: -10%;
     }
 }
