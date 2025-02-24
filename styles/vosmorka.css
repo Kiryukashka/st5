@@ -120,17 +120,21 @@ section {
     margin-top: 4%;
 }
 
-.info_osnova span.probig {
+.info_osnova span,
+.probig {
     color: gray;
     font-size: larger;
 }
 
-.info_osnova h6.opis {
+.info_osnova h6,
+.opis {
     color: gray;
     font-size: larger;
 }
 
-.info_osnova p.pro_mashinu {
+.info_osnova p,
+.pro_mashinu {
+    inline-size: 940px;
     margin-right: 20%;
 }
 
@@ -200,17 +204,27 @@ footer a:hover {
     .container {
         flex-wrap: wrap-reverse;
     }
+
     .rekomend {
-        margin-left: -15%;
+        margin-left: -18%;
     }
+
     .next_old {
         margin-left: -15%;
     }
-    .info_osnova {
-        margin-right: -7%;
-    }
+
     .foto_vasmoi {
         margin-left: -13%;
+    }
+
+    .next_iz {
+        margin-left: -100%;
+    }
+
+    .info_osnova p,
+    .pro_mashinu {
+        inline-size: 300px;
+        margin-right: 20%;
     }
 }
 
@@ -221,7 +235,17 @@ footer a:hover {
 }
 
 @media (max-width: 375px) {
-    .info_mini  {
+    .info_mini {
         margin-left: -10%;
+    }
+
+    .info_osnova {
+        margin-left: -10%;
+    }
+
+    .info_osnova p,
+    .pro_mashinu {
+        inline-size: 300px;
+
     }
 }
