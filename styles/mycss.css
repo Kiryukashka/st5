@@ -39,6 +39,11 @@ a {
 .navbar-toggler {
     background-color: rgb(118, 114, 114);
 }
+
+.nav-item a:hover {
+    color: #474747;
+}
+
 /*Бококовий текст*/
 
 .sidebar {

@@ -34,23 +34,38 @@ section {
     background-color: rgb(118, 114, 114);
 }
 
+.nav-item a:hover {
+    color: #474747;
+}
+
 /*Наступне попереднє авто*/
 
 .next_old {
     display: flex;
+    justify-content: space-around;
     margin-bottom: 2%;
 }
+
 
 .next_old .btn-outline-primary {
     color: white;
 }
 
-.next_car {
-    margin-left: 40%;
+.old_car_honda {
+    display: flex;
+    justify-content: space-between;
 }
 
-.next_iz .btn-outline-primary {
-    margin-left: 53%;
+.old_car_honda .btn-outline-primary {
+    color: white;
+}
+
+.next_auto {
+    display: flex;
+    justify-content: space-around;
+}
+
+.next_auto .btn-outline-primary {
     color: white;
 }
 
@@ -126,16 +141,19 @@ section {
     font-size: larger;
 }
 
+.km-probig {
+    font-size: large;
+    font-weight: 500;
+}
+
 .info_osnova h6,
 .opis {
     color: gray;
     font-size: larger;
 }
 
-.info_osnova p,
 .pro_mashinu {
-    inline-size: 940px;
-    margin-right: 20%;
+    inline-size: 52rem;
 }
 
 /*Фото товара*/
@@ -148,8 +166,8 @@ section {
 }
 
 .rekomend {
-    margin-left: 5%;
     display: flex;
+    justify-content: start;
 }
 
 .rekomend .card_rek {
@@ -200,7 +218,7 @@ footer a:hover {
 }
 
 
-@media (max-width: 425px) {
+@media (min-width: 375px) and (max-width: 425px) {
     .container {
         flex-wrap: wrap-reverse;
     }
@@ -213,24 +231,19 @@ footer a:hover {
         margin-left: -15%;
     }
 
-    .foto_vasmoi {
-        margin-left: -13%;
+    .foto_vasmoi img {
+        margin-left: 0;
+        width: 100%;
     }
 
-    .next_iz {
-        margin-left: -100%;
+    .next_auto {
+        display: flex;
+        justify-content: center;
     }
 
     .info_osnova p,
     .pro_mashinu {
         inline-size: 300px;
-        margin-right: 20%;
-    }
-}
-
-@media (max-width: 768px) {
-    .foto_vasmoi {
-        margin-right: -12%;
     }
 }
 
@@ -246,6 +259,41 @@ footer a:hover {
     .info_osnova p,
     .pro_mashinu {
         inline-size: 300px;
+    }
+}
 
+@media screen and (min-width: 768px) and (max-width: 1020px)  {
+    .pro_mashinu {
+        inline-size: 34rem;
+    }
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1440px) {
+    .pro_mashinu {
+        inline-size: 48rem;
+    }
+}
+
+@media screen and (min-width: 320px) and (max-width: 425px) {
+    .rekomend {
+        display: grid;
+        justify-content: center;
+    }
+
+    .card_rek {
+        margin-top: 10px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .container {
+        flex-wrap: wrap-reverse;
+        display: flex;
+        justify-content: center;
+    }
+
+    .next_auto {
+        display: flex;
+        justify-content: center;
     }
 }
