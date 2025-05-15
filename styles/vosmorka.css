@@ -9,7 +9,8 @@ a {
 section {
     color: white;
     margin-top: 3%;
-    margin-left: 15%;
+    display: grid;
+    justify-content: center;
 }
 
 .container {
@@ -46,23 +47,32 @@ section {
     margin-bottom: 2%;
 }
 
-
 .next_old .btn-outline-primary {
     color: white;
 }
 
 .old_car_honda {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
 }
 
 .old_car_honda .btn-outline-primary {
     color: white;
 }
 
+.navigation {
+    padding-right: 15%;
+    padding-left: 15%;
+}
+
 .next_auto {
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
+}
+
+.old_car {
+    /* display: none; */
+    float: left;
 }
 
 .next_auto .btn-outline-primary {
@@ -81,6 +91,10 @@ section {
 
 .cena h5 {
     color: rgb(4, 196, 4);
+}
+
+#salesman li {
+    list-style: none;
 }
 
 .galochka li {
@@ -159,15 +173,15 @@ section {
 /*Фото товара*/
 
 .foto_vasmoi img {
-    width: 70%;
-    height: 85%;
+    width: 80%;
     margin-top: 10%;
     margin-left: 10%;
 }
 
+/*Рекомендація*/
+
 .rekomend {
     display: flex;
-    justify-content: start;
 }
 
 .rekomend .card_rek {
@@ -217,14 +231,26 @@ footer a:hover {
     align-items: center;
 }
 
+@media screen and (max-width: 320px) {
+    .pro_mashinu {
+        inline-size: 16rem;
+    }
+}
 
-@media (min-width: 375px) and (max-width: 425px) {
-    .container {
-        flex-wrap: wrap-reverse;
+@media screen and (min-width: 320px) and (max-width: 768px) {
+    .rekomend {
+        display: grid;
+        justify-content: center;
     }
 
-    .rekomend {
-        margin-left: -18%;
+    .card_rek {
+        margin-top: 10px;
+    }
+}
+
+@media screen and (min-width: 375px) and (max-width: 425px) {
+    .container {
+        flex-wrap: wrap-reverse;
     }
 
     .next_old {
@@ -247,53 +273,27 @@ footer a:hover {
     }
 }
 
-@media (max-width: 375px) {
-    .info_mini {
-        margin-left: -10%;
-    }
-
-    .info_osnova {
-        margin-left: -10%;
-    }
-
-    .info_osnova p,
-    .pro_mashinu {
-        inline-size: 300px;
-    }
-}
-
-@media screen and (min-width: 768px) and (max-width: 1020px)  {
-    .pro_mashinu {
-        inline-size: 34rem;
-    }
-}
-
-@media screen and (min-width: 1024px) and (max-width: 1440px) {
-    .pro_mashinu {
-        inline-size: 48rem;
-    }
-}
-
-@media screen and (min-width: 320px) and (max-width: 425px) {
-    .rekomend {
-        display: grid;
-        justify-content: center;
-    }
-
-    .card_rek {
-        margin-top: 10px;
-    }
-}
-
 @media screen and (max-width: 768px) {
     .container {
-        flex-wrap: wrap-reverse;
-        display: flex;
+       flex-wrap: wrap-reverse;
+         display: flex;
         justify-content: center;
     }
 
     .next_auto {
         display: flex;
         justify-content: center;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1020px)  {
+    .pro_mashinu {
+        inline-size: 38rem;
+    }
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1440px) {
+    .pro_mashinu {
+        inline-size: 48rem;
     }
 }

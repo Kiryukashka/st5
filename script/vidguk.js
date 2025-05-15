@@ -44,10 +44,9 @@ const notes = [
         complited: false,
     },
     {
-        title: "Чорт",
+        title: "Оу єс",
         complited: true,
     },
-
 ];
 
 function render() {
