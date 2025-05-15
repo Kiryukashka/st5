@@ -1,9 +1,6 @@
 const salesmanArr = [{
     title: 'Продавець',
     name: 'Богдан',
-}, {
-    title: 'Продавець',
-    name: 'Кірюшка'
 }]
 
 const salesmanId = document.getElementById('salesman')
